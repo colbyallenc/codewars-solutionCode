@@ -28,3 +28,22 @@ function solution(digits){
 //   ********************************************************************************************
 
 
+// Triangular numbers are so called because of the equilateral triangular 
+// shape that they occupy when laid out as dots. i.e.
+
+// Return the nth triangular number
+function triangular( n ) {
+ 
+	var sum = 0;
+
+	if (n <= 0) {
+		return 0;
+	} else {
+		for (i = n; i > 0; i--) {
+			sum += i
+		}
+	}
+	return sum;
+}
+
+
